@@ -1,0 +1,292 @@
+ .shadow {
+                -moz-box-shadow: 0px 2px 13px #333;
+                -webkit-box-shadow: 0px 2px 13px #333;
+                box-shadow: 0px 2px 13px #333;
+                /* For IE 8 */
+                -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+                /* For IE 5.5 - 7 */
+                filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+            }
+            #principal{
+                margin: 0 auto;
+                width: 990px;
+                height: auto;
+                background: #fff;
+            }
+            #menu{
+
+                width: 990px;
+                height: 165px;
+                background: url("../images/menu.png") no-repeat;
+                float: left;
+            }
+             #loading{
+
+                width: 16px;
+                height: 11px;
+                background: url("../images/loading.gif") no-repeat;
+                margin: 300px auto;
+
+            }
+            .inputz{
+	width:400px;
+	height:auto;
+	border:solid #eeeeee 1px;
+	padding:5px;
+	color:#666;
+	}
+
+textarea{
+
+	width:400px;
+	height:100px;
+	border:solid #eeeeee 1px;
+	padding:5px;
+	color:#666;
+	          font-family: Arial, Helvetica, sans-serif;
+	}
+.button{
+	height:auto;
+	width:90px;
+	padding:5px;
+	background:#082e4e;
+	margin-top:15px;
+	border:#09243a solid 1px;
+	color:#fff;
+	font-weight:bold;
+	cursor:pointer;
+        float: right;
+        margin-left: 5px;
+
+		}
+            #banner{
+
+                width: 960px;
+                height: 330px;
+                background: #dedede;
+                float: left;
+                padding: 15px;
+            }
+            #shadow{
+                width: 990px;
+                height: 1110px;
+                background: #fff;
+                float: left;
+                -moz-border-radius: 15px;
+                -webkit-border-radius:15px;
+                -khtml-border-radius:15px;
+                border-radius: 15px;
+            }
+            #content{
+
+                width: 970px;
+                height: 650px;
+                background: #fff;
+                float: left;
+                -moz-border-radius: 15px;
+                -webkit-border-radius:15px;
+                -khtml-border-radius:15px;
+                border-radius: 15px;
+                padding: 10px;
+
+
+            }
+            #rightP{
+
+                width: 360px;
+                height: 600px;
+                float: right;
+                background: url("../images/botoes.jpg") no-repeat ;
+       
+
+            }
+               #right{
+
+                width: 360px;
+                height: 630px;
+                float: right;             
+                margin-top: 30px;
+
+            }
+            #left{
+
+                width: 570px;
+                height: 630px;
+                float: left;
+                margin-top: 30px;
+                text-align: justify;
+
+            }
+            #novidades{
+
+                width: 530px;
+                height: 330px;
+                float: left;
+                margin-left: 50px
+
+            }
+            #footer{
+
+                width: 950px;
+                height: auto;
+                float: left;
+                text-align: center;
+                padding: 25px;
+                line-height: 14px;
+
+            }
+            b{
+                color: #ffa001;
+            }
+            body{
+
+                background: url("../images/bg.png") repeat-x;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 13px;
+                color: #4c4c4c;
+                line-height: 20px;
+            }
+            ul{
+                margin:  0px 0px 10px 20px;
+                padding:0;      
+                 font-weight: bold;
+                list-style-image: url("../images/seta.png");
+
+            }
+            li{
+                margin: 0;
+                padding: 0 0 10px 0;
+                font-weight: bold;
+            }
+            hr{
+                border-bottom: 0;
+                border-right: 0;
+                border-left: 0;
+                border-top: 1px solid #ffa001;
+                width: 100%;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            .li{
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                color: #0d3d65; 
+                display: inline;
+                margin: 1px;
+                font-weight: 400;
+            }
+              .li a:hover{
+
+                color: #fff; 
+          
+            }
+            .titulo{
+                color: #0d3d65;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 18px;
+
+            }
+            .tituloCinza{
+                color: #4c4c4c;
+                font-family: Arial, Helvetica, sans-serif;
+   font-size: 18px;
+
+            }
+            .fsmall{
+                font-size: 10px;
+                color: #ffa001;
+            }
+            a{
+                text-decoration: none;
+                color: #0d3d65;
+            }
+
+            #m01{
+                cursor: pointer;
+                float: left; 
+                height: 186px; 
+                width: 145px;
+            }
+            #m01:hover{
+                background: url("../images/menu01.png") no-repeat; 
+            }
+            #m02{
+                cursor: pointer;
+                float: left; 
+                height: 186px; 
+                width: 145px;
+   
+            }
+            #m02:hover{
+                background: url("../images/menu02.png") no-repeat; 
+            }
+            #m03{
+                cursor: pointer;
+                float: left; 
+                height: 186px; 
+                width: 134px;                
+            
+             
+            }
+            #m03:hover{
+                background: url("../images/menu03.png") no-repeat; 
+            }
+            #m04{
+                cursor: pointer;
+                float: left; 
+                height: 186px; 
+                width: 162px;                
+              }
+            #m04:hover{
+                background: url("../images/menu04.png") no-repeat; 
+            }
+            #m05{
+                cursor: pointer;
+                float: left; 
+                height: 186px; 
+                width: 186px;                
+            }
+            #m05:hover{
+                background: url("../images/menu05.png") no-repeat; 
+            }
+            #m06{
+                cursor: pointer;
+                float: left; 
+                height: 186px; 
+                width: 218px;                
+    
+            }
+            #m06:hover{
+                background: url("../images/menu06.png") no-repeat; 
+            }
+            
+            
+             #bt01{
+                cursor: pointer;
+                float: left; 
+                height: 150px; 
+                width: 330px; 
+                margin-top: 5px
+            }
+             #bt02{
+                cursor: pointer;
+                float: left; 
+                height: 150px; 
+                width: 330px; 
+                margin-top: 5px
+            }
+             #bt03{
+                cursor: pointer;
+                float: left; 
+                height: 150px; 
+                width: 330px; 
+                margin-top: 5px
+            }
+             #bt04{
+                cursor: pointer;
+                float: left; 
+                height: 150px; 
+                width: 330px; 
+                margin-top: 5px
+            }

@@ -1,0 +1,57 @@
+<script>
+
+
+
+    $('#contatof').submit(function() {
+        var variaveis = $('#contatof').serialize();
+
+        $.ajax({
+            type: "POST",
+            url:  "../paginas/envia.php",
+            data: variaveis,
+            async: false, 
+            success: function() {
+	
+                $("#trueContato").css("display","block"); 
+                //setTimeout(limpa('trueContato'),4000);
+				$('#contatof').each (function(){
+					this.reset();
+				});
+	 
+            },
+            error: function(){
+                $("#falseContato").fadeIn("slow"); 
+                //setTimeout(limpa('falseContato'),4000);
+	
+            } 
+        });
+
+        return false;
+    });
+</script>  
+
+
+
+<div style="width: 500px; margin-left: 60px;  height: auto;">
+    <span class="titulo">CONTATO</span> 
+<hr>
+<div style="width: 400px; margin-left: 40px; margin-top: 90px; height: auto;">
+    <div id="trueContato" style="width:100%; margin:10px 0px 10px 0px;  float:left; text-align:center; height:auto; color:#060; background:#D7FBD9; border:1px solid #060; display:none;"><strong>Email enviado com sucesso.</strong></div>
+    <div id="falseContato" style="width:100%; margin:10px 0px 10px 0px;  display:none; float:left; text-align:center; height:auto; color:#900; background:#FFCACA; border:1px solid #900;"><strong>Erro ao enviar email.</strong></div>
+
+    <form action="#" method="post" id="contatof" >
+        <label >Nome <span style="font-size:10px; color:#900; float: right; ">*Campo obrigatórios</span></label>
+        <input type="text" class="inputz required" id="nome"  title="Campo obrigatório" name="nome" />
+        <label >Email <span style="font-size:10px; color:#900;  float: right; ">*Campo obrigatórios</span></label>
+        <input type="text" id="email"  class="inputz required email" title="Campo obrigatório"  name="email" />
+        <label >Telefone</label>
+        <input type="text" id="tel" class="inputz"  name="tel" />
+        <label >Assunto</label>
+        <input type="text" id="assunto" class="inputz"  name="assunto" />
+        <label >Mensagem <span style="font-size:10px; color:#900; float: right;  ">*Campo obrigatórios</span></label>
+        <textarea id="mensagem" name="mensagem" class="required" title="Campo obrigatório" ></textarea>
+        <input type="submit" value="Enviar" class="button" />
+        <input type="reset" value="Limpar" class="button" />
+    </form>
+</div> 
+</div> 

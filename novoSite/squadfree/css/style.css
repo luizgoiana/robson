@@ -795,3 +795,26 @@ Parallax
 	}
 	
 }
+
+  /*Articles*/
+
+  .img-top-post{
+    width: 100%;
+    margin-bottom: 1.5em
+  }
+
+  .title-site {
+    font-size: 1.4em;
+    margin-bottom: 2em;
+    padding-bottom: .5em;
+    text-align: left;
+    border-bottom: 2px solid;
+  }
+
+  #read-too{
+    margin-top: 100px;
+  }
+
+  #post-content{
+    white-space: pre-wrap;
+  }

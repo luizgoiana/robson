@@ -28,7 +28,6 @@ $hostname = "localhost";
 //connection to the database
 $dbhandle = mysql_connect($hostname, $username, $password) 
   or die("Unable to connect to MySQL");
-echo "Connected to MySQL<br>";
 
 $selected = mysql_select_db("santiago",$dbhandle) 
   or die("Could not select examples");
@@ -64,7 +63,7 @@ function limit_words($string, $word_limit)
         <li><a href="#about">A Empresa</a></li>
 		<li><a href="#service">Serviços</a></li>
 		<li><a href="#articles">Artigos</a></li>
-		<li><a href="#highlight">Destaques</a></li>
+		<li><a href="#highlights">Destaques</a></li>
 		<li><a href="#contact">Contato</a></li>
       </ul>
             </div>
@@ -353,13 +352,13 @@ function limit_words($string, $word_limit)
 		</div>
         <div class="row">
             <?php
-            $result = mysql_query("SELECT * FROM post WHERE type=1");
+            $result = mysql_query("SELECT * FROM post WHERE type=1 LIMIT 4");
             while ($row = mysql_fetch_array($result)) {
 			echo '<div class="col-xs-6 col-sm-3 col-md-3">
 				<div class="wow bounceInUp" data-wow-delay="0.2s">
                 <div class="team boxed-grey">
                     <div class="inner">
-                    	<div class="avatar"><img src="'.$row{'imagepath'}.'" alt="" class="img-responsive" /></div>
+                    	<div class="avatar"><a href="articles.php?id='.$row{'id'}.'"><img src="'.$row{'imagepath'}.'" alt="" class="img-responsive" /></a></div>
 						<h5>'.$row{'title'}.'</h5>
                         <p class="subtitle">'.limit_words($row{'content'},10).'</p>
                     </div>
@@ -376,7 +375,7 @@ function limit_words($string, $word_limit)
 	<!-- /Section: aticles -->
 
 	<!-- Section: highlight -->
-    <section id="highlight" class="home-section text-center bg-white">
+    <section id="highlights" class="home-section text-center bg-white">
 		<div class="heading-about">
 			<div class="container">
 			<div class="row">
@@ -401,13 +400,13 @@ function limit_words($string, $word_limit)
 		</div>
         <div class="row">
             <?php
-            $result = mysql_query("SELECT * FROM post WHERE type=0");
+            $result = mysql_query("SELECT * FROM post WHERE type=0 LIMIT 4");
             while ($row = mysql_fetch_array($result)) {
 			echo '<div class="col-xs-6 col-sm-3 col-md-3">
 				<div class="wow bounceInUp" data-wow-delay="0.2s">
                 <div class="team boxed-grey">
                     <div class="inner">
-                    	<div class="avatar"><img src="'.$row{'imagepath'}.'" alt="" class="img-responsive" /></div>
+                    	<div class="avatar"><a href="articles.php?id='.$row{'id'}.'"><img src="'.$row{'imagepath'}.'" alt="" class="img-responsive" /></a></div>
 						<h5>'.$row{'title'}.'</h5>
                         <p class="subtitle">'.limit_words($row{'content'},10).'</p>
                     </div>
@@ -421,7 +420,7 @@ function limit_words($string, $word_limit)
         </div>		
 		</div>
 	</section>
-	<!-- /Section: aticles -->
+	<!-- /Section: highlight -->
 
 	<!-- Section: contact -->
     <section id="contact" class="home-section text-center">
